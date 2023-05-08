@@ -5,5 +5,5 @@ conn <- dbConnect(
 Postgres(), 
 user <- '', 
 password ='', 
-dbname <- 'food_orderingdb', 
+dbname <- '', 
 host <- 'localhost')
