@@ -1,7 +1,7 @@
-#sample dataframe 
+#sample dataframe  # nolint
 menu <- data.frame(Item = c("Burger", "Pizza", "Fries", "Soda"), Price = c(10, 15, 5, 2)) # nolint
 
-# Define the function to process new orders
+#function to process new orders
 process_order <- function() { # nolint
 
   # Initialize empty order list
@@ -13,7 +13,7 @@ process_order <- function() { # nolint
   repeat {
     # Print the food menu and prompt the user to select an item
 
-  item <- readline(prompt = "Enter the name of the item you wish to add to your order (or type 'done' to finish): ")   # nolint: line_length_linter.
+  item <- readline(prompt = "Enter the name of the item you wish to add to your order: ")   # nolint: line_length_linter.
 
 
     # Check if the user wants to finish the order
@@ -74,4 +74,4 @@ process_order <- function() { # nolint
   }
 }
 
-
+process_order()
