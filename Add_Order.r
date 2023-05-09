@@ -74,4 +74,4 @@ process_order <- function() { # nolint
   }
 }
 
-process_order()
+print(process_order())

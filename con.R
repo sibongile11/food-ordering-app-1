@@ -1,9 +1,11 @@
-library(RPostgres)
 
+library(RPostgreSQL)
 
-conn <- dbConnect(
-Postgres(), 
-user <- '', 
-password ='', 
-dbname <- '', 
-host <- 'localhost')
+con <- dbConnect(
+  PostgreSQL(),
+  dbname = "postgres",
+  host = "localhost",
+  port = 5432,
+  user = "postgres",
+  password = " "
+)
