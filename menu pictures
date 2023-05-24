@@ -221,7 +221,54 @@ UPDATE Menu
 SET Picture = 'images/burger.jpg'
 WHERE Item_id = 40;
 
+ALTER TABLE Menu
+ADD COLUMN Category_picture VARCHAR(100);
 
 
 
+UPDATE Menu
+SET Category_picture = 'path/to/burger_picture.jpg'
+WHERE Item_category = 'Burgers';
+
+
+
+
+
+UPDATE Menu
+SET Category_picture = 'path/to/burger_picture.jpg'
+WHERE Item_category = 'Chicken_meat';
+
+
+
+
+
+UPDATE Menu
+SET Category_picture = 'path/to/burger_picture.jpg'
+WHERE Item_category = 'Pizzas';
+
+
+
+
+
+UPDATE Menu
+SET Category_picture = 'path/to/burger_picture.jpg'
+WHERE Item_category = 'Drinks';
+
+
+UPDATE Menu
+SET Category_picture = 'path/to/burger_picture.jpg'
+WHERE Item_category = 'Hot beverages';
+
+
+
+
+UPDATE Menu
+SET Category_picture = 'path/to/burger_picture.jpg'
+WHERE Item_category = 'Milkshakes';
+
+
+
+UPDATE Menu
+SET Category_picture = 'path/to/burger_picture.jpg'
+WHERE Item_category = 'Noodles';
 
